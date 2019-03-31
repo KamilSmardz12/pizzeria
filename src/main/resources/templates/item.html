@@ -13,12 +13,14 @@
         <h1 class="text-center"></h1>
         <h1 class="text-center"></h1>
         <h1 class="text-center"></h1>
-        <img src="../static/img/pizza-margherita.jpg" th:src="@{${item.imgUrl}}" class="img-fluid" alt="Pizza margherita" />
+        <img src="../static/img/" th:src="@{${item.imgUrl}}" class="img-fluid" alt="Pizza margherita"/>
         <div class="shadow-lg p-3 mb-5 bg-white rounded">
             <h1 class="text-center" th:text="${item.name}"></h1>
             <h3 class="text-center" th:text="|Cena ${item.price}zł|"></h3>
             <p class="text-justify" th:text="${item.description}"></p>
-            <button type="button" class="btn btn-primary">Dodaj do zamówienia</button>
+            <a href="#" th:href="@{/zamowienie/dodaj(itemId=${item.id})}" class="btn btn-warning d-block">
+                Dodaj do zamówienia
+            </a>
         </div>
     </div>
 </div>

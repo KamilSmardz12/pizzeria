@@ -5,8 +5,8 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
-@Setter
-@Getter
+//@Setter
+//@Getter
 @Entity
 public class Item {
     @Id
@@ -18,4 +18,48 @@ public class Item {
     @Column(length = 1024)
     private String description;
     private String imgUrl;
+
+    public Long getId() {
+        return id;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getShortDescription() {
+        return shortDescription;
+    }
+
+    public void setShortDescription(String shortDescription) {
+        this.shortDescription = shortDescription;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
+    }
 }

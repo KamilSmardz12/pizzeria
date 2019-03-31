@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Komunikat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="container">
+        <div class="jumbotron home-jumbo ">
+            <div class="container text-center text-white jumbo-container">
+                <h1 class="display-3">Jedzonko na wynos</h1>
+                <p>Zamawiaj co chcesz i ile chcesz, a my przygotujemy to dla Ciebie.</p>
+                <div class="text-right">
+                    <a th:href="@{/zamowienie}" class="btn btn-sm btn-warning"><i
+                            class="fas fa-shopping-basket fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container text-center jumbo-container">
+                <div th:if="${message}" th:remove="tag">
+                    <h1><p th:text="${message.content}"></p>
+                    </h1>
+                </div>
+                <a href="#" th:href="@{/}" class="btn btn-sm btn-warning">
+                    Powrót do strony głównej
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
