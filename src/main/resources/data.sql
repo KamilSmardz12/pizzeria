@@ -1,8 +1,9 @@
 insert into item(id, price, name, short_description, img_url, description) VALUES
-  (1, 22.50, 'Pizza Margherita', 'Włoska pizza na cienkim cieście z serem i sosem pomidorowym',
+  (1, 22.50, 'PizzaMargherita', 'Włoska pizza na cienkim cieście z serem i sosem pomidorowym',
   '/img/pizza-margherita.jpg',
   'Pizza Margherita to klasyka włoskiej kuchni. W naszym wydaniu serwujemy pizzę na cienkim cieście z ' ||
    'ręcznie przygotowanym sosem pomidorowym i oryginalnym serem mozarella'),
+
   (2, 25.99, 'Pizza Capriciosa', 'Pizza na cienkim cieście z serem, sosem pomidorowym i pieczarkami',
   '/img/pizza-capriciosa.jpg',
   'Pizza Capriciosa to po Marghericie najpopularniejsza wersja tej smacznej włoskiej potrawy. Oprócz naszego ' ||
